@@ -1,0 +1,93 @@
+@import 'base';
+.product_card{
+    max-width: 300px;
+    overflow: hidden;
+    height: 420px;
+    padding: 10px;
+    box-shadow: 0 0 10px $binance-lighter-color;
+    border-radius: 20px;
+    margin: 10px 10px;
+    position: relative;
+
+    img{
+        width: 100%;
+        height: 200px;
+        display: block;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    span{
+        color: $binance-light-color;
+        padding: 2px;
+    }
+    input{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+    }
+}
+.product_card:hover{
+    box-shadow: 0 0 10px $binance-light-color;
+} 
+.product_box{
+    width: 100%;
+    height: auto;
+    padding: 10px;  
+
+    h2{
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        text-transform: capitalize;
+        cursor: pointer;
+        color: $binance-dark-color; 
+        padding: 5px;
+    }
+    p{
+        width: 100%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        height: 70px;
+        overflow: hidden;
+        color: $binance-dark-color; 
+    }
+}   
+.row_btn{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px; 
+    a{
+        width: 50%;
+        text-align: center;
+        text-transform: uppercase;
+        color: $binance-dark-color;
+        font-weight: 600;
+        letter-spacing: 2px;
+        padding: 6px; 
+        border-radius: 10px;
+    } 
+} 
+#btn_buy{
+    color: #fff;
+    background: $binance-lighter-color;
+    margin-right: 5px;
+}
+
+#btn_buy:hover{
+    background: #00aae4;
+    margin-right: 5px;
+}
+#btn_view{
+    color: #fff;
+    background: $binance-dark-color;
+    margin-left: 5px;
+}
+
+#btn_view:hover{
+    background: #00aae4;
+    margin-left: 5px;
+} 

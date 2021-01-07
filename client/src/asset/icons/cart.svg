@@ -1,0 +1,11 @@
+<svg id="_1._Buttons_5._Round_3._Large_Icon" data-name="1. Buttons / 5. Round / 3. Large / Icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Large">
+    <g id="_Background" data-name="◼️ Background" fill="#12161C" stroke="#e4e4e4" stroke-miterlimit="10" stroke-width="1">
+      <circle cx="24" cy="24" r="24" stroke="none"/>
+      <circle cx="24" cy="24" r="23.5" fill="none"/>
+    </g>
+    <g id="_Icon" data-name="🔶 Icon" transform="translate(13 13)">
+      <path id="_Icon_Color" data-name="🔹 Icon Color" d="M14.667,18.333A1.833,1.833,0,1,1,16.5,16.5,1.831,1.831,0,0,1,14.667,18.333Zm-9.167,0A1.833,1.833,0,1,1,7.333,16.5,1.831,1.831,0,0,1,5.5,18.333Zm11-4.583H5.5a1.836,1.836,0,0,1-1.834-1.834,1.771,1.771,0,0,1,.229-.879L5.133,8.791l-3.3-6.958H0V0H3l.862,1.833H17.417a.918.918,0,0,1,.917.917.9.9,0,0,1-.11.441L14.942,9.139a1.826,1.826,0,0,1-1.6.944H6.508l-.825,1.494-.027.111a.226.226,0,0,0,.229.229H16.5v1.833Z" transform="translate(1.833 1.833)" fill="#F0B90B"/>
+    </g>
+  </g>
+</svg>

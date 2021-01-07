@@ -1,0 +1,62 @@
+@import 'base';
+.cart-main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+.cart{
+    width: 30%;
+    height: auto; 
+    display: flex;  
+    position: relative;
+    box-shadow: 0 0 5px $binance-light-color;
+
+    .amount {
+        span{
+        color: $binance-light-color;
+        padding: 0 20px;
+        }
+    
+        button {
+        background: $binance-light-color;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px; 
+        }
+    } 
+} 
+
+.delete{
+    position: absolute;
+    top:0;
+    right: 5px;
+    color: $binance-light-color;
+    font-weight: 900;
+    cursor: pointer;
+}
+.total{
+    width: 20%;
+    height: 50px; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    
+    h3{ 
+        color: $binance-dark-color;
+    } 
+
+    .buy-button{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        background: $binance-light-color;
+        width: 100px; 
+        padding: 20px;
+        margin-bottom: 10px;
+        text-align: center; 
+        border-radius: 30px;
+    }
+
+}

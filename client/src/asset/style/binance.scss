@@ -1,0 +1,53 @@
+    @import 'base';
+    .ripple-main{   
+        width: 100%;
+        height: 100%;
+        display: flex; 
+        align-items: center;
+        flex-direction: column; 
+
+        h2{
+            font-size: 30px;
+            margin-top: 10px;
+            color: $binance-light-color; 
+        }
+
+        .ripple-table{
+            display: flex; 
+            flex-direction: column;
+            border-radius: 50px;
+            background: #eee;
+
+            .ripple-text{
+
+                ul{
+                    display: flex;
+                    flex-direction: row;
+
+                    li{ 
+                        width: 190px;
+                        text-align: center;
+                        margin:10px 20px;
+                        font-size: 20px;
+                        color: $binance-dark-color; 
+                        border-bottom: 0.1px solid $binance-light-color;
+                    }
+                }
+            }
+            .ripple-value{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+
+                    li{
+                        width: 220px;
+                        text-align: center;
+                        font-size: 20px;
+                        margin:5px 5px;
+                        color: $binance-dark-color;
+                    }
+                }
+            }
+        }
+    } 
+    

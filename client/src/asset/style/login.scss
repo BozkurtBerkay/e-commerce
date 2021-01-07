@@ -1,0 +1,40 @@
+@import 'base';
+.login-page{
+    max-width: 700px; 
+    border: 1px solid $binance-light-color;
+    border-radius: 50px;
+    padding: 30px;
+    margin: 50px auto;
+    color: $binance-dark-color;
+
+    form {
+        input,button {
+            width: 100%;
+            height: 40px;
+            margin: 10px 0;
+            padding: 0 5px; 
+            border: 1px solid $binance-lighter-color;
+            border-radius: 10px;
+        }
+
+        .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button{ 
+                width: 150px;
+                background: $binance-lighter-color;
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+        }
+
+        a {
+            color: $binance-dark-color;
+            letter-spacing: 1.3px;
+            text-transform: uppercase;
+        }
+    }
+}   

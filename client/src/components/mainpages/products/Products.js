@@ -64,9 +64,9 @@ function Products() {
         {
             isAdmin && 
             <div className="delete-all">
-                <span>Select all</span>
+                <span>Hepsini seç</span>
                 <input type="checkbox" checked={isCheck} onChange={checkAll} />
-                <button onClick={deleteAll}>Delete ALL</button>
+                <button onClick={deleteAll}>Hepsini Sil</button>
             </div>
         }
 

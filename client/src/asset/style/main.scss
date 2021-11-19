@@ -1,4 +1,6 @@
   @import 'header';
+
+  @import 'history';
    
   @import 'products';
    
@@ -20,11 +22,12 @@
 
   @import 'notFound';
 
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
 * {
     padding: 0; 
     margin: 0;
-    font-family: BinancePlex,Arial,PingFangSC-Regular,'Microsoft YaHei',sans-serif; 
+    font-family: BinancePlex,PingFangSC-Regular,'IBM Plex Sans','Microsoft YaHei',sans-serif; 
   }
    
   .App{

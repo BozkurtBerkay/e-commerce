@@ -10,7 +10,7 @@ import Cart from './cart/Cart'
 import NotFound from './utils/not_found/NotFound'
 import Categories from './categories/Categories'
 import CreateProduct from './createProduct/CreateProduct'
-import Binance from './binance-api/Binance'
+import Binances from './binance-api/Binances'
 
 import {GlobalState} from '../../GlobalState'
 
@@ -32,7 +32,7 @@ function Pages() {
             <Route path="/category" exact component={isAdmin ? Categories : NotFound} />
             <Route path="/create_product" exact component={isAdmin ? CreateProduct : NotFound} />
             <Route path="/edit_product/:id" exact component={isAdmin ? CreateProduct : NotFound} />
-            <Route path="/binance-api" exact component={isAdmin ? Binance : NotFound} />
+            <Route path="/binance-api" exact component={isAdmin ? Binances : NotFound} />
 
             <Route path="/history" exact component={isLogged ? OrderHistory : NotFound} />
             <Route path="/history/:id" exact component={isLogged ? OrderDetails : NotFound} />

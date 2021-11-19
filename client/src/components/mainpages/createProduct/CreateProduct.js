@@ -181,7 +181,7 @@ function CreateProduct() {
                     </select>
                 </div>
 
-                <button type="submit">{onEdit? "Update" : "Kaydet"}</button>
+                <button type="submit">{onEdit? "Kaydet" : "Kaydet"}</button>
             </form>
         </div>
     )

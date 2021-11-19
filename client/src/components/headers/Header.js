@@ -26,6 +26,7 @@ function Header() {
             <>
                 <li><Link to="/create_product">Ürün Oluştur</Link></li>
                 <li><Link to="/category">Kategoriler</Link></li>
+                <li><Link to="/history">Satın Alınanlar</Link></li>
                 <li><Link to="/binance-api">Binance API</Link></li>
             </>
         )
@@ -33,8 +34,7 @@ function Header() {
 
     const loggedRouter = () =>{
         return(
-            <>
-                <li><Link to="/history">Satın Alınanlar</Link></li>
+            <> 
                 <li><Link to="/" onClick={logoutUser}>Çıkış</Link></li>
             </>
         )

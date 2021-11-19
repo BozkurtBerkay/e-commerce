@@ -18,10 +18,11 @@ app.use('/user', require('./routes/UserRouter'))
 app.use('/api', require('./routes/CategoryRouter'))
 app.use('/api', require('./routes/Upload'))
 app.use('/api', require('./routes/ProductRouter'))
+app.use('/api', require('./routes/PaymentRouter'))
 
 //MongoDB bağlantı
-const URI = process.env.MONGODB_URL
-mongoose.connect(URI,{
+const URL = process.env.MONGODB_URL
+mongoose.connect(URL,{
     useCreateIndex: true,
     useFindAndModify: false,
     useNewUrlParser: true,
@@ -42,3 +43,4 @@ const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
     console.log('Sunucu calisiyor ',PORT)
 })
+ 

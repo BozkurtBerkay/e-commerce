@@ -1,3 +1,4 @@
+@import 'base';
 .create_product{
     width: 100%;
     display: flex;
@@ -84,7 +85,7 @@
         button{
             width: 200px;
             height: 40px;
-            background: #555;
+            background: $binance_light_color;
             color: white;
             text-transform: uppercase;
             letter-spacing: 2px;

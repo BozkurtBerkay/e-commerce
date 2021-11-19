@@ -12,7 +12,11 @@ function OrderDetails() {
     useEffect(() => {
         if(params.id){
             history.forEach(item =>{
-                if(item._id === params.id) setOrderDetails(item)
+                if(item._id === params.id)
+                {
+                     setOrderDetails(item) 
+                }
+                    
             })
         }
     },[params.id, history])
@@ -21,33 +25,14 @@ function OrderDetails() {
     if(orderDetails.length === 0) return null;
 
     return (
-        <div className="history-page">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>Postal Code</th>
-                        <th>Country Code</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>{orderDetails.address.recipient_name}</td>
-                        <td>{orderDetails.address.line1 + " - " + orderDetails.address.city}</td>
-                        <td>{orderDetails.address.postal_code}</td>
-                        <td>{orderDetails.address.country_code}</td>
-                    </tr>
-                </tbody>
-            </table>
-
+        <div className="history-page"> 
             <table style={{margin: "30px 0px"}}>
                 <thead>
                     <tr>
-                        <th></th>
-                        <th>Products</th>
-                        <th>Quantity</th>
-                        <th>Price</th>
+                        <th>Resimler</th>
+                        <th>Ürünler</th>
+                        <th>Adet</th>
+                        <th>Ücret</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -57,13 +42,17 @@ function OrderDetails() {
                             <td><img src={item.images.url} alt="" /></td>
                             <td>{item.title}</td>
                             <td>{item.quantity}</td>
-                            <td>$ {item.price * item.quantity}</td>
+                            <td>XRP {item.price}</td>
                         </tr>
                         ))
                     }
                     
                 </tbody>
             </table>
+                
+            <label> Toplam Ödenen Tutar: XRP {orderDetails.cart.reduce((prev, item) => {return  prev + (item.price * item.quantity)},0)}</label>
+                
+            
         </div>
     )
 }

@@ -32,13 +32,14 @@ function OrderHistory() {
     return (
         <div className="history-page">  
         
-            <h4> {history.length} SİPARİŞ VERDİNİZ</h4>
+            <h4> {history.length} SİPARİŞ VERİLDİ</h4>
 
             <table>
                 <thead>
                     <tr>
-                        <th>Ödeme ID</th>
-                        <th>Satın Alma Tarihi</th>
+                        <th>Alıcı Adı</th>
+                        <th>Alıcı Email</th>
+                        <th>Satın Alma Tarihi</th> 
                         <th></th>
                     </tr>
                 </thead>
@@ -46,9 +47,10 @@ function OrderHistory() {
                     {
                         history.map(items => (
                             <tr key={items._id}>
-                                <td>{items.paymentID}</td>
-                                <td>{new Date(items.createdAt).toLocaleDateString()}</td>
-                                <td><Link to={`/history/${items._id}`}>View</Link></td>
+                                <td>{items.name}</td>
+                                <td>{items.email}</td>
+                                <td>{new Date(items.createdAt).toLocaleDateString()} : {new Date(items.createdAt).toLocaleTimeString()}</td>
+                                <td><Link to={`/history/${items._id}`}>Görüntüle</Link></td>
                             </tr>
                         ))
                     }

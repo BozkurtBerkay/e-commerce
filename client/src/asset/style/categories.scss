@@ -1,3 +1,4 @@
+@import 'base';
 .categories{
     max-width: 700px;
     display: flex;
@@ -22,15 +23,15 @@
         width: 210px;
         border: none;
         outline: none;
-        border-bottom: 1px solid #555;
+        border-bottom: 1px solid $binance-light-color;
     }
     
     button{
         width: 70px;
         height: 35px;
         
-        background: #555;
-        color: white;
+        background: $binance-light-color;
+        color: $binance-dark-color;
         margin-left: 10px;
     }
     

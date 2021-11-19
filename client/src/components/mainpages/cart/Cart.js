@@ -52,7 +52,7 @@ function Cart() {
     }
 
     const removeProduct = id =>{
-        if(window.confirm("Do you want to delete this product?")){
+        if(window.confirm("Ürünü listeden kaldırmak istiyor musunuz?")){
             cart.forEach((item, index) => {
                 if(item._id === id){
                     cart.splice(index, 1)
@@ -65,15 +65,13 @@ function Cart() {
     }
 
     const tranSuccess = async(payment) => {
-        const {paymentID, address} = payment;
-
-        await axios.post('/api/payment', {cart, paymentID, address}, {
+        await axios.post('/api/payment', {cart}, {
             headers: {Authorization: token}
         })
 
         setCart([])
         addToCart([])
-        alert("Başarıyla sipariş verdiniz.")
+        alert("Sipariş Başarılı...")
     }
 
 
@@ -102,18 +100,16 @@ function Cart() {
                             
                             <div className="delete" 
                             onClick={() => removeProduct(product._id)}>
-                                Kapat
+                                Sil
                             </div>
                         </div>
                     </div>
                 ))
             }
-
+            
             <div className="total">
                 <h3>Toplam : {total} XRP</h3>
-                <BuyButton
-                total={total}
-                tranSuccess={tranSuccess} />
+                <BuyButton total={total} tranSuccess={tranSuccess}/>
             </div>
         </div>
     )

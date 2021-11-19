@@ -9,7 +9,7 @@ function Register() {
 
     const onChangeInput = e =>{
         const {name, value} = e.target;
-        setUser({...user, [name]:value})
+        setUser({...user, [name]:value.toLowerCase()})
     }
 
     const registerSubmit = async e =>{
